@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./index.css" rel="stylesheet"/>
+    <link rel="icon" href="https://github.githubassets.com/images/modules/logos_page/Octocat.png"/>
+</head>
+<body>
+    <header>
+        <h2>GitHub User Search</h2>
+    </header>
+    <div id="search-box">
+        <input id="search-input" type="text" placeholder="Enter Username" autofocus required>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <h1 id="loading-text">Loading...</h1><br>
+    <div id="user-card">
+        <img id="avatar-img" src="./avatar.png" alt="User Avatar"/>
+        <div id="details-sec">
+            <h3>Name : <span id="name"></span></h3>
+            <h3>Repos : <span id="repos"></span></h3>
+            <h3>Followers : <span id="followers"></span></h3>
+            <h3>Following : <span id="following"></span></h3>
+            <h3>Profile Link : <a href="" target="_blank" id="profile-link"></a></h3>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
